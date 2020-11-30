@@ -3204,11 +3204,14 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		-moz-transition: 0.85s ease-in-out;
+		-webkit-transition: 0.85s ease-in-out;
+		-ms-transition: 0.85s ease-in-out;
+		transition: 0.85s ease-in-out;
+		-moz-transition-delay: 1s;
+        -webkit-transition-delay: 1s;
+        -ms-transition-delay: 1s;
+        transition-delay: 1s;
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3217,13 +3220,15 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+        background-image: url(../../images/banner.png);
+        border-bottom: solid 10px rgba(255, 255, 255, 0.875);
 	}
 
 		#header h1 {
-			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			transition: opacity 0.2s ease-in-out, visibility 0.2s;
+			-moz-transition: opacity 2s ease-in-out, visibility 2s;
+			-webkit-transition: opacity 2s ease-in-out, visibility 2s;
+			-ms-transition: opacity 2s ease-in-out, visibility 2s;
+			transition: opacity 2s ease-in-out, visibility 2s;
 			border-bottom: 0;
 			font-size: 0.8em;
 			margin-bottom: 0;
@@ -3261,10 +3266,10 @@ input, select, textarea {
 
 				#header nav a[href="#menu"] {
 					text-decoration: none;
-					-moz-transition: background-color 0.2s ease-in-out;
-					-webkit-transition: background-color 0.2s ease-in-out;
-					-ms-transition: background-color 0.2s ease-in-out;
-					transition: background-color 0.2s ease-in-out;
+					-moz-transition: background-image 2s ease-in-out;
+					-webkit-transition: background-image 2s ease-in-out;
+					-ms-transition: background-image 2s ease-in-out;
+					transition: background-image 2s ease-in-out;
 					border-radius: 5px;
 					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
 					padding: 0 1.35em;
@@ -3296,16 +3301,6 @@ input, select, textarea {
 					#header nav a[href="#menu"]:active {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
-
-		#header.alt {
-			background-color: transparent;
-		}
-
-			#header.alt h1 {
-				opacity: 0;
-				visibility: hidden;
-			}
-
 		@media screen and (max-width: 736px) {
 
 			#header {
@@ -3519,7 +3514,6 @@ input, select, textarea {
 			margin: 0 auto;
 			width: 55em;
 		}
-
 		#banner .cimages1 {
 			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
@@ -3740,6 +3734,17 @@ input, select, textarea {
             -webkit-transform: translateY(0.5em);
             -ms-transform: translateY(0.5em);
             transform: translateY(0.5em);
+            opacity: 0;
+        }
+        body.is-preload #header {
+            -moz-transform: translateY(0.5em);
+            -webkit-transform: translateY(0.5em);
+            -ms-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+            -moz-transform: translateX(0.5em);
+            -webkit-transform: translateX(0.5em);
+            -ms-transform: translateX(0.5em);
+            transform: translateX(0.5em);
             opacity: 0;
         }
         body.is-preload #banner .cimages2 {
@@ -4196,8 +4201,20 @@ input, select, textarea {
 		}
 
 	}
-.logoimage {
-    width:100px; /* you can use % */
+.oniri {
+    width: 87px; /* you can use % */
+    height: auto;
+}
+.maki3 {
+    width: 82px;
+    height: auto;
+}
+.maki {
+    width: 92px;
+    height: auto;
+}
+.tamago {
+    width: 127px;
     height: auto;
 }
 .coverimage {
