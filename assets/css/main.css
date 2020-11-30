@@ -3470,7 +3470,7 @@ input, select, textarea {
 			width: 55em;
 		}
 
-		#banner .logo {
+		#banner .cimages {
 			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
 			-ms-transition: opacity 2s ease, -ms-transform 1s ease;
@@ -3479,9 +3479,25 @@ input, select, textarea {
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
 			transform: translateY(0);
+			-moz-transition-delay: 1s;
+            -webkit-transition-delay: 1s;
+            -ms-transition-delay: 1s;
+            transition-delay: 1s;
 			opacity: 1;
 			margin: 0 0 1.3em 0;
 		}
+		#banner .logo {
+            -moz-transition: opacity 2s ease, -moz-transform 1s ease;
+            -webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
+            -ms-transition: opacity 2s ease, -ms-transform 1s ease;
+            transition: opacity 2s ease, transform 1s ease;
+            -moz-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+            margin: 0 0 1.3em 0;
+        }
 
 			#banner .logo .icon {
 				border-radius: 100%;
@@ -3537,13 +3553,7 @@ input, select, textarea {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			font-family: Mohave;
-			font-size: 1em;
-			font-weight: 200;
-			letter-spacing: 0.1em;
-			line-height: 2;
 		}
-
 		@media screen and (max-width: 1280px) {
 
 			#banner {
@@ -3627,6 +3637,13 @@ input, select, textarea {
 			-ms-filter: blur(2px);
 			filter: blur(2px);
 		}
+		body.is-preload #banner .cimages {
+            -moz-transform: translateY(0.5em);
+            -webkit-transform: translateY(0.5em);
+            -ms-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+            opacity: 0;
+        }
 
 /* Wrapper */
 
@@ -4062,5 +4079,9 @@ input, select, textarea {
 	}
 .logoimage {
     width:100px; /* you can use % */
+    height: auto;
+}
+.coverimage {
+    width: 45%;
     height: auto;
 }
