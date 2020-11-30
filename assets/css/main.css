@@ -285,10 +285,11 @@ input, select, textarea {
         }
 
         a.special.alt:not(.button):before {
-            -moz-transition: background-color 0.2s ease-in-out;
-            -webkit-transition: background-color 0.2s ease-in-out;
-            -ms-transition: background-color 0.2s ease-in-out;
-            transition: background-color 0.2s ease-in-out;
+            -moz-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+            -ms-transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+
             border-radius: 100%;
             border: solid 2px rgba(0, 0, 0, 0.125);
             content: '\f105';
@@ -304,11 +305,12 @@ input, select, textarea {
         }
 
         a.special.alt:not(.button):hover:before {
-            background-color: rgba(0, 0, 0, 0.025);
+            background-color: rgba(255, 255, 255, 0.025);
+            border: solid 2px rgba(255, 255, 255, 0.125);
         }
-
         a.special.alt:not(.button):active:before {
-            background-color: rgba(0, 0, 0, 0.075);
+            background-color: rgba(255, 255, 255, 0.075);
+            border: solid 2px rgba(255, 255, 255, 0.125);
         }
 	strong, b {
 		color: #ffffff;
@@ -350,7 +352,7 @@ input, select, textarea {
 		}
 		h1.major.alt, h2.major.alt, h3.major.alt, h4.major.alt, h5.major.alt, h6.major.alt {
 		    padding-bottom: 1em;
-            border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+            border-bottom: solid 2px rgba(0, 0, 0, 0.125);
             color: black;
 		}
 
