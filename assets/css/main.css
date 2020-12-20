@@ -52,6 +52,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background-color: #4f4f4f;
 }
 
 ol, ul {
@@ -120,7 +121,6 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #4f4f4f;
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -3235,6 +3235,10 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+		
+		#header h2 {
+			color: #000000;
+		}
 
 			#header h1 a {
 				border: 0;
@@ -3772,7 +3776,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper > header {
-		padding: 11em 0 2.25em 0 ;
+		padding: 8em 0 2.25em 0 ;
 	}
 
 		#wrapper > header .inner {
@@ -4053,9 +4057,11 @@ input, select, textarea {
 		}
 
 /* Footer */
-
+	#footer {
+		background-color: #4f4f4f
+	}
 	#footer .inner {
-		padding: 5em 0 3em 0 ;
+		padding: 2em 0 0em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4089,7 +4095,7 @@ input, select, textarea {
 		#footer .inner .copyright {
 			border-top: solid 2px rgba(255, 255, 255, 0.125);
 			list-style: none;
-			margin: 4em 0 2em 0;
+			margin: 0em 0 2em 0;
 			padding: 2em 0 0 0;
 			width: 100%;
 		}
