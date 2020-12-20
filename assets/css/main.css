@@ -1,3 +1,4 @@
+  
 @import url(fontawesome-all.min.css);
 /* @import url(stylesheet.css); */
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
@@ -4220,8 +4221,4 @@ input, select, textarea {
 .coverimage {
     width: 45%;
     height: auto;
-}
-
-.blacken {
-    filter: brightness(0) saturate(100%);
 }
