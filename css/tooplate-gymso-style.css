@@ -42,11 +42,11 @@
     --link-color:           #56cbf9;
     --p-color:              #666262;
 
-    --base-font-family:     'Plain', sans-serif;
+    --base-font-family:     'Mohave', sans-serif;
     --font-weight-bold:     bold;
     --font-weight-normal:   normal;
     --font-weight-light:    300;
-    --font-weight-thin:     100;
+    --font-weight-thin:     200;
 
     --h1-font-size:         48px;
     --h2-font-size:         36px;
@@ -54,9 +54,9 @@
     --h4-font-size:         24px;
     --h5-font-size:         22px;
     --h6-font-size:         22px;
-    --p-font-size:          18px;
+    --p-font-size:          22px;
     --base-font-size:       16px;
-    --menu-font-size:       14px;
+    --menu-font-size:       18px;
 
     --border-radius-large:  100%;
     --border-radius-small:  2px;
@@ -80,23 +80,21 @@
 
   h1 {
     font-size: var(--h1-font-size);
-    font-family: 'Sushi-Sans';
+    font-family: 'Sushi-Sans', sans-serif;
     font-weight: var(--font-weight-bold);
-    letter-spacing: -1px;
     text-transform: uppercase;
     margin: 20px 0;
   }
 
   h2 {
+    font-family: 'Sushi-Sans', sans-serif;
     font-size: var(--h2-font-size);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -2px;
   }
 
   h3 {
     font-size: var(--h3-font-size);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -1px;
     margin: 0;
   }
 
@@ -288,6 +286,11 @@
     padding: 1rem;
   }
 
+  .navbar img{
+    width: 60px;
+    margin-right: 2%;
+  }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -295,8 +298,11 @@
 
   .navbar-brand {
     color: var(--white-color);
-    font-size: var(--h3-font-size);
+    font-family: 'Sushi Sans', sans-serif;
+    font-size: var(--h4-font-size);
     font-weight: var(--font-weight-bold);
+    margin-top: auto;
+    margin-bottom: auto;
     line-height: normal;
     padding-top: 0;
   }
@@ -310,9 +316,11 @@
     padding: 2px 6px;
   }
 
-  .nav-item .nav-link.active,
+  .nav-item .nav-link.active{
+    color: #FCD6F6;
+  }
   .nav-item .nav-link:hover {
-    color: var(--primary-color);
+    color: #81F4E1;
   }
 
   .navbar .social-icon li a {
@@ -423,10 +431,13 @@
     text-align: right;
   }
   .hero h6{
+    font-size: 3vh;
+    font-weight: 400;
     text-align: right;
   }
   .hero:before {
     content: " ";
+    background-color: #000000;
     background-image: url("../images/maki.svg");
     background-repeat: repeat;
     background-size: 10%  ;
@@ -597,7 +608,7 @@
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 0px 15px;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
@@ -699,6 +710,7 @@
     background-image: url("../images/maki.svg");
     background-repeat: repeat;
     background-size: 10%;
+    background-color: #000000;
     border-bottom: #56cbf9 10px solid;
     border-radius: 0 0 20% 0%;
   }
@@ -766,48 +778,27 @@
      CONTACT              
   -----------------------------------------*/
 .contact{
-  background-color: #000000;
+  background: rgb(23,29,33);
+background: linear-gradient(51deg, rgba(23,29,33,1) 0%, rgba(86,203,249,1) 0%, rgba(86,203,249,1) 18%, rgba(255,255,255,1) 18%, rgba(255,255,255,1) 20%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 82%, rgba(255,114,159,1) 82%, rgba(255,114,159,1) 100%, rgba(23,29,33,1) 100%);
+  border-radius: 20% 20% 0 0%;
 }
-  .webform input,
-  button#submit-button {
-    height: calc(2.25rem + 20px);
-  }
 
-  .form-control {
-    border-radius: var(--border-radius-small);
-    margin: 1.3rem 0;
-  }
+  
+.contact h2{
+  text-align: center;
+  color: #ffffff;
+}
+.contact h6{
+  text-align: center;
+  color: #ffffff;
+}
 
-  .form-control:focus {
-    box-shadow: none;
-    border-color: var(--dark-color);
+@media(max-width: 992px) {
+  .contact {
+    border-radius: 0 0 0 0 / 0 0 0 0 ;
   }
-
-  button#submit-button {
-    background: var(--white-color);
-    border-color: transparent;
-    color: var(--dark-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  button#submit-button:hover {
-    background: var(--primary-color);
-  }
-
-  .contact h2 + p {
-    max-width: 90%;
-  }
-
-  .google-map {
-    border-top: 1px solid #efebeb;
-    margin-top: 2.5rem;
-    padding-top: 2.5rem;
-  }
-
-  .google-map iframe {
-    width: 100%;
-  }
+}
+  
 
 
   /*---------------------------------------
@@ -816,16 +807,22 @@
 
   .site-footer {
     border-top: 1px solid #efebeb;
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
 
   .site-footer a {
     color: var(--p-color);
     font-weight: var(--font-weight-light);
   }
-
-  .site-footer p {
+  .site-footer p{
     font-size: var(--base-font-size);
+  }
+  .pr {
+    font-size: var(--base-font-size);
+    color: #000000; 
+    margin-top: auto;
+    margin-left: auto;   
+    font-family: 'Sushi-Sans', sans-serif;
   }
 
   .contact .fa,
@@ -862,6 +859,24 @@
   .social-icon li a:hover {
     color: var(--primary-color);
   }
+  
+  .fa {
+    padding: 20px;
+    margin-top: 1%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  
 
 
   /*---------------------------------------
