@@ -67,6 +67,10 @@
     background: var(--white-color);
     font-family: var(--base-font-family);
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
 
 
   /*---------------------------------------
@@ -129,8 +133,10 @@
   .section {
     padding: 7rem 0;
   }
-
-
+  
+  #biglinks {
+    color: red;
+  }
   /* BUTTON */
   .hero-btn {
     background-color: black;
