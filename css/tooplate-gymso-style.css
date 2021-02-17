@@ -636,6 +636,10 @@
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  display: none;
+}
+.show {
+  display: block !important;
 }
 
 .portfolio .portfolio-item .portfolio-info {
