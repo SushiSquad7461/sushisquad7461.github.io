@@ -116,7 +116,6 @@
     line-height: inherit;
     margin: 0;
   }
-
   p {
     color: var(--p-color);
     font-size: var(--p-font-size);
