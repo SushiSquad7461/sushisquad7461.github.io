@@ -303,13 +303,13 @@
 
   .navbar-brand {
     color: var(--white-color);
-    font-family: 'Sushi Sans', sans-serif;
+    font-family: 'Sushi-Sans', sans-serif;
     font-size: var(--h4-font-size);
     font-weight: var(--font-weight-bold);
     margin-top: auto;
     margin-bottom: auto;
     line-height: normal;
-    padding-top: 0;
+    padding: 0;
   }
 
   .nav-item .nav-link {
