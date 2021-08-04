@@ -1,4 +1,7 @@
 
+.resources-link {
+  color: black;
+}
 
   @font-face {
       font-family: 'Mohave';
@@ -1061,3 +1064,4 @@ background: linear-gradient(51deg, rgba(23,29,33,1) 0%, rgba(86,203,249,1) 0%, r
       display: block;
     }
   }
+
