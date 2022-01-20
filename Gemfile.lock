@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.15.5-x64-mingw-ucrt)
+    jekyll-watch (2.2.1)
+      listen (~> 3.0)
+    listen (3.7.1)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    rb-fsevent (0.11.0)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
+    webrick (1.7.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  jekyll-watch (~> 2.2)
+  webrick
+
+BUNDLED WITH
+   2.3.3
