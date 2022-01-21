@@ -7,7 +7,44 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        {% if page.title == "Home | Team 7461"%}
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item">
+                  <a href="#home" class="nav-link smoothScroll">Home</a>
+                </li>
+      
+                <li class="nav-item">
+                  <a href="#about" class="nav-link smoothScroll">About</a>
+                </li>
+      
+                <li class="nav-item">
+                  <a target="_blank" href="https://shop.sushisquad.org/" rel="noreferrer noopener" class="nav-link smoothScroll">Shop</a>
+                </li>
+      
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link smoothScroll">Sponsors</a>
+                </li>
+       
+                
+                <li class="nav-item">
+                  <a href="camps.html" rel="noreferrer noopener" class="nav-link smoothScroll">Camps</a>
+                </li>         
+                
+                <li class="nav-item">
+                  <a href="history.html" class="nav-link smoothScroll">History</a>
+                </li>
+                <li class="nav-item">
+                  <a href="resources.html" class="nav-link smoothScroll">Resources</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                </li>
+              
+          </ul>
 
+        </div>
+        {%else%}
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-lg-auto">
                 <li class="nav-item">
@@ -44,6 +81,6 @@
             </ul>
 
         </div>
-
+        {%endif%}
     </div>
 </nav>
